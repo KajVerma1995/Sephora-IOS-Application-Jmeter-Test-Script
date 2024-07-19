@@ -10,35 +10,64 @@ Application: Sephora
 https://apps.apple.com/us/app/sephora-buy-makeup-skincare/id393328150?icid2=ios_app_hotspot_bopis_lp or
 https://play.google.com/store/apps/details?id=com.sephora&icid2=android_app_hotspot_bopis_lp 
 
-LISTS OF TASKS TO BE PERFORMED - 
-Scenario:
-#	Step	Probability Percentage
-1	Open App	100%
-2	Item Selection	100%
- 	Search-> Open item	30%	100%
- 	Select random recommendation	20%	
- 	Select random just dropped	10%	
- 	Select random selling fast	10%	
- 	Shop->Random Category->Random Product	30%	
-3	Add to cart	60%
+# LISTS OF TASKS TO BE PERFORMED - 
 
-•	Think time 5...10 seconds.
-•	New user at each iteration.
-•	A product should be available before adding to Cart.
-•	Average shopping cart size – 4 items.
-•	Average user session duration – 4 minutes.
+1. 	Open App,	100%
 
-TASKS THAT WERE NOT ACHIEVED - 
+2. 	Item Selection,	100%
+ 	
+         Search-> Open item,	30%
+   
+      	 Select random recommendation,	20%
+        
+      	 Select random just dropped,	10%	
+        
+      	 Select random selling fast,	10%	
+        
+      	 Shop->Random Category->Random Product,	30%
+
+    Search Criteria
+   	
+   	    Set of keywords for search with Probability%
+   	
+        Fragrance,30
+   	
+        Lipstick,20
+   	
+        Color,20
+   	
+        Shampoo,10
+   	
+        Skin,10
+   	
+        Eye,5
+   	
+        Face,5
+
+   
+4. 	Add to cart,	60%
+
+5. 	Think time 5...10 seconds.
+
+6. 	New user at each iteration.
+
+7. 	A product should be available before adding to Cart.
+
+8. 	Average shopping cart size – 4 items.
+
+9. 	Average user session duration – 4 minutes.
+
+
+# TASKS THAT WERE NOT ACHIEVED - 
   
  1. A product should be available before adding to Cart.
   
-  EXPLANATION - As per my JSON extractor logic, I was not able to find the business relevance with any propery Key that could help me identify if the product is available.i.e, Either isAvailable or isInStock key. 
-  I would reach out to the product team to understand which property refers to product availability and apply the same logic to my Json as applied for randomization in other transactions.
+        EXPLANATION - As per my JSON extractor logic, I was not able to find the business relevance with any propery Key that could help me identify if the product is available.i.e, Either isAvailable or isInStock key. I would reach out to the product team to understand which property refers to product availability and apply the same logic to my Json as applied for randomization in other transactions.
 
   2. On Running with multiple user/thread, The generate token api is giving me 403 forbidden error. Thus, able to run it successfully with Single thread only.
 
 
-TYPES OF JMETER ELEMENTS USED IN MY SCRIPT - 
+# TYPES OF JMETER ELEMENTS USED IN MY SCRIPT - 
 
 Thread Group - To group all my Transactions in the test plan.
 Disabled "Same User on each Iteration" in my test plan.
