@@ -1,13 +1,15 @@
 # Sephora-IOS-Application-Jmeter-Test-Script
-Sephora IOS Application JMeter Test Script
 
 JMX File name - Sephora_TestAssessment.jmx
 
 Apache JMeter Version - 5.6.3
 
-Tool: Jmeter
 Application: Sephora
-https://apps.apple.com/us/app/sephora-buy-makeup-skincare/id393328150?icid2=ios_app_hotspot_bopis_lp or
+
+https://apps.apple.com/us/app/sephora-buy-makeup-skincare/id393328150?icid2=ios_app_hotspot_bopis_lp 
+
+or
+
 https://play.google.com/store/apps/details?id=com.sephora&icid2=android_app_hotspot_bopis_lp 
 
 # LISTS OF TASKS TO BE PERFORMED - 
